@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind file -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind colos custom file -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                jashim: '#FECC02;',
+               
+              }
+             
+            }
+          }
+        }
+      </script>
     <title>Portfolio of Jakanaka production</title>
+
 </head>
 <body>
-    <h1 >Portfolio of jakanaka production with tailwind</h1>
+    <!-- nav bar -->
+   <nav class=" bg-white-500 fixd top-0 right-0 left-0">
+    <div class="flex justify-between items-center h-20 mx-auto w-full max-w-7xl p-4 font-serif font-bold">
+        <h1 class="text-2xl">Jakanaka Production </h1>
+        <ul class="flex text-2xl gap-8">
+            <li>About Us</li>
+            <li>Our Movies</li>
+            <li>Service</li>
+           
+        </ul>
+    </div>
+   
+   </nav>
+   <!-- main header -->
+<section class="bg-red-500 h-screen pt-20 bg-[url(./images/banner.jpg)] bg-cover">
+   <div class="h-full w-full max-w-7xl mx-auto px-5 flex items-center">
+   <div class="">
+    <h2 class="text-white text-2xl font-semibold">Movie production studio</h2>
+    <h1 class="text-7xl text-white font-semibold">FILMS MADE TO</h1>
+    <h1 class="text-yellow-400 text-7xl font-semibold">PERFECTION</h1>
+    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus,  <br>
+        luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <button class="font-bebas border-2 border-white py-2 px-3 text-white font-semibold mt-8 hover:bg-yellow-600
+        hover:border-yellow-700 hover:text-black transition-all">Discover more</button>
+   </div>
+   </div>
+</section>
+
+
 </body>
 </html>
